@@ -44,7 +44,7 @@ You'll get an output like:
 
 ![Alt text](https://eavmarshall.github.io./ReduxFirebase/resources/testoutput.PNG "")
 
-
+Refreshing the page will re-run the tests
 
 ### Goals
 - Allows you to login, log out with google authentication
