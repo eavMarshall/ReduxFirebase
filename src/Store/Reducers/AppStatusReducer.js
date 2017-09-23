@@ -7,10 +7,9 @@ const AppStatusReducerDefaultState = {
 }
 
 const AppStatusReducer = (state = AppStatusReducerDefaultState, action)=> {
-    if (null === action || undefined == state)
-        return AppStatusReducerDefaultState
     switch(action.type) {
-        case AllTypes.AppStatus.isAppReady:
+        case AllTypes.RESET_STORE: return AppStatusReducerDefaultState; break;
+        case AllTypes.AppStatus.setIsAppReady:
             var copy = Object.assign({}, state);
             copy.isAppReady = action.payload === true ? true : false;
             return copy

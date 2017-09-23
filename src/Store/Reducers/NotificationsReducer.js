@@ -14,6 +14,7 @@ const NotificationsReducer = (state = NotificationsReducerDefaultState, action)=
     if (null === action || undefined == state)
         return NotificationsReducerDefaultState
     switch(action.type) {
+        case AllTypes.RESET_STORE: return NotificationsReducerDefaultState;
         case AllTypes.Notifications.AddNotification :
             var copy = Object.assign({}, state);
             var error = Object.assign({}, ErrorTemplate);

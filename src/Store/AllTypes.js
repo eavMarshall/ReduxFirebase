@@ -7,6 +7,7 @@ const getType = (type, payload)=>{
 }
 
 const AllTypes = {
+    RESET_STORE: '@ALLSTORES.RESET',
     getType: getType,
     FireBase: FireBase,
     AppStatus: AppStatus,

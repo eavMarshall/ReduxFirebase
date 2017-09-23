@@ -1,3 +1,6 @@
-import * as mainApp from '../index.js';
+import * as TestsAppStatusReducer from './Areas/TestsAppStatusReducer'
+import * as Helpers from './Helpers'
 
-window.Store = mainApp.Store;
+Helpers.esModuleTestRunner('AppStatusReducer', TestsAppStatusReducer);
+
+Helpers.sumResults();

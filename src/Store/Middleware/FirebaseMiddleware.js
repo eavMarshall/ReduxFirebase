@@ -1,14 +1,6 @@
 import * as firebase from 'firebase';
 import AllTypes from '../AllTypes'
 
-firebase.initializeApp({
-    apiKey: "<API_KEY>",
-    authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-    storageBucket: "<BUCKET>.appspot.com",
-    messagingSenderId: "<SENDER_ID>",
-});
-
 const provider = new firebase.auth.GoogleAuthProvider();
 
 const FirebaseMiddleware = (store)=> (next) => (action) => {

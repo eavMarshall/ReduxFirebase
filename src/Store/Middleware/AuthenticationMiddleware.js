@@ -17,6 +17,7 @@ const AuthenticationMiddleware = (store)=> (next) => (action) => {
     } else {
         next(action)
     }
+    next(action)
 }
 
 export default AuthenticationMiddleware
