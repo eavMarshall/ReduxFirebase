@@ -18,13 +18,41 @@ To build
 npm build
 ```
 
+### Store tests
+Current tests @ \ReduxFirebase\src\Tests\Areas
+
+Add tests and export them like so
+```javascript
+const AppStatusReducer_FireBaseLoggedIn_False_IsReady_To_True = ()=>{
+    Store.dispatch(AllTypes.getType(AllTypes.AppStatus.setIsFireBaseLoggedIn, false));
+    Store.dispatch(AllTypes.getType(AllTypes.AppStatus.setIsAppReady, true));
+    if (true == Store.getState().AppStatusReducer.isAppReady) return true;
+
+    return false;
+}
+export { AppStatusReducer_FireBaseLoggedIn_False_IsReady_To_True }
+```
+
+Then add the es6 module to the esModuleTestRunner in \src\Tests\index.js
+```javascript
+import * as TestsAppStatusReducer from './Areas/TestsAppStatusReducer'
+Helpers.esModuleTestRunner('AppStatusReducer', TestsAppStatusReducer);
+```
+
+Run test by running \ReduxFirebase\src\Tests\public\index.html on a webserver.
+You'll get an output like:
+
+![Alt text](https://eavmarshall.github.io./ReduxFirebase/resources/testoutput.PNG "")
+
+
+
 ### Goals
 - Allows you to login, log out with google authentication
-- Add jasmine test working out of the box
-- Having some basic insert, update and query examples
+- Have state tests
+- Have View tests
+- Have firebase tests
 
 ### TODO
 - Build tests
-	- State tests
 	- firebase tests
 - Build insert, update query functionality
