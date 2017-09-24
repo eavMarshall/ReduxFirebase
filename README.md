@@ -33,22 +33,34 @@ Webpack test config
 ### Store tests
 Current tests @ \ReduxFirebase\src\Tests\Areas
 
-Add tests and export them like so
+**Design expectations**
+
+All reducers are expected to implement RESET_STORE to reset the reducers state to it's default state. Before every function that is found inside an es6 module is executed this action is dispatched.
+Doing this will ensure each test will not pass on side effects to another test.
+
+While building tests this command will watch any changes in your test scripts and build the output .js file
+```
+npm test 
+```
+
+Add tests to a es6 module and export them like so
 ```javascript
-const AppStatusReducer_FireBaseLoggedIn_False_IsReady_To_True = ()=>{
-    Store.dispatch(AllTypes.getType(AllTypes.AppStatus.setIsFireBaseLoggedIn, false));
-    Store.dispatch(AllTypes.getType(AllTypes.AppStatus.setIsAppReady, true));
-    if (true == Store.getState().AppStatusReducer.isAppReady) return true;
+const AppReducer_FireBaseLoggedIn_False_IsReady_To_True = ()=>{
+    Store.dispatch(AllTypes.getType(AllTypes.App.setIsFireBaseLoggedIn, false));
+    Store.dispatch(AllTypes.getType(AllTypes.App.setIsAppReady, true));
+    if (true == Store.getState().AppReducer.isAppReady) return true;
 
     return false;
 }
-export { AppStatusReducer_FireBaseLoggedIn_False_IsReady_To_True }
+export { AppReducer_FireBaseLoggedIn_False_IsReady_To_True }
 ```
 
-Then add the es6 module to the esModuleTestRunner in \src\Tests\index.js
+Group all your tests via es6 module. Importing the entire es6 module to the Helper function esModuleTestRunner in \src\Tests\index.js will indicated that all functions in that module are tests.
+This function will then iterate through all the functions, exeucting each function. If the function returns true, the test has pass. If it throws an error, or returns false then the test failed.
 ```javascript
-import * as TestsAppStatusReducer from './Areas/TestsAppStatusReducer'
-Helpers.esModuleTestRunner('AppStatusReducer', TestsAppStatusReducer);
+import * as TestsAppStatusReducer from './Areas/TestsAppReducer'
+
+Helpers.esModuleTestRunner('TestsAppReducer', TestsAppReducer);
 ```
 
 Run test by running \ReduxFirebase\src\Tests\public\index.html on a webserver.
@@ -57,6 +69,9 @@ You'll get an output like:
 ![Alt text](https://eavmarshall.github.io./ReduxFirebase/resources/testoutput.PNG "")
 
 Refreshing the page will re-run the tests
+
+### Async tests
+TODO
 
 ### View tests
 TODO
