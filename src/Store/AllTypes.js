@@ -1,5 +1,5 @@
 import FireBase from './Types/FireBase'
-import AppStatus from './Types/AppStatus'
+import App from './Types/App'
 import Notifications from './Types/Notifications'
 
 const getType = (type, payload)=>{
@@ -10,7 +10,7 @@ const AllTypes = {
     RESET_STORE: '@ALLSTORES.RESET',
     getType: getType,
     FireBase: FireBase,
-    AppStatus: AppStatus,
+    App: App,
     Notifications: Notifications
 }
 export default AllTypes

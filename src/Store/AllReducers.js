@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 
-import AppStatusReducer from './Reducers/AppStatusReducer'
+import AppReducer from './Reducers/AppReducer'
 import NotificationsReducer from './Reducers/NotificationsReducer'
 
 const AllReducers = combineReducers({
-  AppStatusReducer,
+  AppReducer,
   NotificationsReducer
 })
 

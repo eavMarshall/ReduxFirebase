@@ -21,7 +21,7 @@ const addCount = (passed)=> {
 
 const resetStoreSetLogin = ()=> {
     Store.dispatch(AllTypes.getType(AllTypes.RESET_STORE, true));
-    Store.dispatch(AllTypes.getType(AllTypes.AppStatus.setIsFireBaseLoggedIn, true));
+    Store.dispatch(AllTypes.getType(AllTypes.App.setIsFireBaseLoggedIn, true));
 }
 
 const createTitleRow = (moduleName)=>{
@@ -53,15 +53,17 @@ const esModuleTestRunner = (moduleName, module)=>{
     createTitleRow(moduleName);
     Object.keys(module).forEach((key)=> {
         var testName = module[key].name;
-        testName = testName.replace(/_/g, ' ');
-        var passed = false;
-        resetStoreSetLogin();
-        try {
-            passed = module[key]();
-        } catch(e) { /*if failed passed is still false*/ }
+        if (null !== testName && undefined !== testName) {
+            testName = testName.replace(/_/g, ' ');
+            var passed = false;
+            resetStoreSetLogin();
+            try {
+                passed = module[key]();
+            } catch(e) { /*if failed passed is still false*/ }
 
-        addCount(passed);
-        createTestResultRow(testName, passed);
+            addCount(passed);
+            createTestResultRow(testName, passed);
+        }
     });
 }
 export { esModuleTestRunner }
