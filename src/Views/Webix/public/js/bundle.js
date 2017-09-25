@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 93);
+/******/ 	return __webpack_require__(__webpack_require__.s = 94);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -79,7 +79,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.assertionError = exports.assert = undefined;
 
-var _constants = __webpack_require__(25);
+var _constants = __webpack_require__(24);
 
 /**
  * Throws an error if the provided assertion is falsy
@@ -164,7 +164,7 @@ var _utf = __webpack_require__(38);
 
 var _json = __webpack_require__(8);
 
-var _storage = __webpack_require__(26);
+var _storage = __webpack_require__(25);
 
 var _environment = __webpack_require__(18);
 
@@ -1258,13 +1258,13 @@ exports.PRIORITY_INDEX = exports.PriorityIndex = undefined;
 exports.setNodeFromJSON = setNodeFromJSON;
 exports.setMaxNode = setMaxNode;
 
-var _Index = __webpack_require__(28);
+var _Index = __webpack_require__(27);
 
 var _util = __webpack_require__(1);
 
 var _Node = __webpack_require__(6);
 
-var _LeafNode = __webpack_require__(29);
+var _LeafNode = __webpack_require__(28);
 
 /**
 * Copyright 2017 Google Inc.
@@ -1399,17 +1399,17 @@ var _SortedMap = __webpack_require__(40);
 
 var _Node = __webpack_require__(6);
 
-var _snap = __webpack_require__(62);
+var _snap = __webpack_require__(63);
 
 var _PriorityIndex = __webpack_require__(4);
 
 var _KeyIndex = __webpack_require__(21);
 
-var _IndexMap = __webpack_require__(64);
+var _IndexMap = __webpack_require__(65);
 
-var _LeafNode = __webpack_require__(29);
+var _LeafNode = __webpack_require__(28);
 
-var _comparators = __webpack_require__(66);
+var _comparators = __webpack_require__(67);
 
 /**
 * Copyright 2017 Google Inc.
@@ -2106,7 +2106,7 @@ exports.invalidRootOperation = invalidRootOperation;
 exports.invalidFormat = invalidFormat;
 exports.internalError = internalError;
 
-var _constants = __webpack_require__(32);
+var _constants = __webpack_require__(31);
 
 var FirebaseStorageError = function () {
     function FirebaseStorageError(code, message) {
@@ -2301,49 +2301,6 @@ function internalError(message) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _FireBase = __webpack_require__(112);
-
-var _FireBase2 = _interopRequireDefault(_FireBase);
-
-var _App = __webpack_require__(113);
-
-var _App2 = _interopRequireDefault(_App);
-
-var _Notifications = __webpack_require__(114);
-
-var _Notifications2 = _interopRequireDefault(_Notifications);
-
-var _Login = __webpack_require__(115);
-
-var _Login2 = _interopRequireDefault(_Login);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var getType = function getType(type, payload) {
-    return { type: type, payload: payload };
-};
-
-var AllTypes = {
-    RESET_STORE: '@ALLSTORES.RESET',
-    getType: getType,
-    FireBase: _FireBase2.default,
-    App: _App2.default,
-    Notifications: _Notifications2.default,
-    Login: _Login2.default
-};
-exports.default = AllTypes;
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*! @license Firebase v4.3.1
 Build: rev-b4fe95f
 Terms: https://firebase.google.com/terms/ */
@@ -2354,9 +2311,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-__webpack_require__(122);
+__webpack_require__(123);
 
-var _firebase_app = __webpack_require__(123);
+var _firebase_app = __webpack_require__(124);
 
 // Export a single instance of firebase app
 /**
@@ -2383,7 +2340,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2398,9 +2355,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.attachDummyErrorHandler = exports.Deferred = exports.PromiseImpl = undefined;
 
-var _globalScope = __webpack_require__(56);
+var _globalScope = __webpack_require__(57);
 
-var PromiseImpl = exports.PromiseImpl = _globalScope.globalScope.Promise || __webpack_require__(124);
+var PromiseImpl = exports.PromiseImpl = _globalScope.globalScope.Promise || __webpack_require__(125);
 /**
  * A deferred promise implementation.
  */
@@ -2484,7 +2441,7 @@ var attachDummyErrorHandler = exports.attachDummyErrorHandler = function attachD
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2592,7 +2549,7 @@ var validateContextObject = exports.validateContextObject = function validateCon
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2630,7 +2587,7 @@ var _obj = __webpack_require__(2);
 
 var _util = __webpack_require__(1);
 
-var _validation = __webpack_require__(13);
+var _validation = __webpack_require__(12);
 
 var _utf = __webpack_require__(38);
 
@@ -2894,7 +2851,7 @@ var validateObjectContainsKey = exports.validateObjectContainsKey = function val
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2982,7 +2939,7 @@ exports.OperationSource = OperationSource;
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2999,7 +2956,7 @@ exports.make = make;
 exports.resolve = resolve;
 exports.reject = reject;
 
-var _promise = __webpack_require__(12);
+var _promise = __webpack_require__(11);
 
 function make(resolver) {
   return new _promise.PromiseImpl(resolver);
@@ -3041,7 +2998,7 @@ function reject(error) {
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports) {
 
 var g;
@@ -3066,6 +3023,49 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _FireBase = __webpack_require__(114);
+
+var _FireBase2 = _interopRequireDefault(_FireBase);
+
+var _App = __webpack_require__(115);
+
+var _App2 = _interopRequireDefault(_App);
+
+var _Notifications = __webpack_require__(116);
+
+var _Notifications2 = _interopRequireDefault(_Notifications);
+
+var _Login = __webpack_require__(117);
+
+var _Login2 = _interopRequireDefault(_Login);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var getType = function getType(type, payload) {
+    return { type: type, payload: payload };
+};
+
+var AllTypes = {
+    RESET_STORE: '@ALLSTORES.RESET',
+    getType: getType,
+    FireBase: _FireBase2.default,
+    App: _App2.default,
+    Notifications: _Notifications2.default,
+    Login: _Login2.default
+};
+exports.default = AllTypes;
 
 /***/ }),
 /* 18 */
@@ -3100,7 +3100,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                                                                                                                                                                                                                                                                               */
 
 
-var _constants = __webpack_require__(25);
+var _constants = __webpack_require__(24);
 
 /**
  * Returns navigator.userAgent string or '' if it's not defined.
@@ -3320,7 +3320,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.KEY_INDEX = exports.KeyIndex = undefined;
 
-var _Index = __webpack_require__(28);
+var _Index = __webpack_require__(27);
 
 var _Node = __webpack_require__(6);
 
@@ -3469,7 +3469,7 @@ exports.nodeFromJSON = nodeFromJSON;
 
 var _ChildrenNode = __webpack_require__(5);
 
-var _LeafNode = __webpack_require__(29);
+var _LeafNode = __webpack_require__(28);
 
 var _Node = __webpack_require__(6);
 
@@ -3477,11 +3477,11 @@ var _obj = __webpack_require__(2);
 
 var _assert = __webpack_require__(0);
 
-var _childSet = __webpack_require__(65);
+var _childSet = __webpack_require__(66);
 
-var _comparators = __webpack_require__(66);
+var _comparators = __webpack_require__(67);
 
-var _IndexMap = __webpack_require__(64);
+var _IndexMap = __webpack_require__(65);
 
 var _PriorityIndex = __webpack_require__(4);
 
@@ -3752,23 +3752,6 @@ process.umask = function() { return 0; };
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var AllViews = {
-    Login: '@Views.Login',
-    Home: '@Views.Home'
-};
-
-exports.default = AllViews;
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*! @license Firebase v4.3.1
 Build: rev-b4fe95f
 Terms: https://firebase.google.com/terms/ */
@@ -3814,7 +3797,7 @@ var CONSTANTS = exports.CONSTANTS = {
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3881,7 +3864,7 @@ var SessionStorage = exports.SessionStorage = createStoragefor('sessionStorage')
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3922,7 +3905,7 @@ var LONG_POLLING = exports.LONG_POLLING = 'long_polling';
 
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3996,7 +3979,7 @@ exports.Index = Index;
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4032,7 +4015,7 @@ var _assert = __webpack_require__(0);
 
 var _util = __webpack_require__(1);
 
-var _snap = __webpack_require__(62);
+var _snap = __webpack_require__(63);
 
 var __childrenNodeConstructor;
 /**
@@ -4261,7 +4244,7 @@ exports.LeafNode = LeafNode;
 
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4293,13 +4276,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                                                                                                                                                                                                                                                                               */
 
 
-var _ServerValues = __webpack_require__(69);
+var _ServerValues = __webpack_require__(70);
 
 var _nodeFromJSON = __webpack_require__(22);
 
 var _Path = __webpack_require__(3);
 
-var _SparseSnapshotTree = __webpack_require__(70);
+var _SparseSnapshotTree = __webpack_require__(71);
 
 var _SyncTree = __webpack_require__(139);
 
@@ -4317,15 +4300,15 @@ var _StatsManager = __webpack_require__(43);
 
 var _StatsReporter = __webpack_require__(153);
 
-var _StatsListener = __webpack_require__(75);
+var _StatsListener = __webpack_require__(76);
 
 var _EventQueue = __webpack_require__(154);
 
-var _PersistentConnection = __webpack_require__(76);
+var _PersistentConnection = __webpack_require__(77);
 
 var _ReadonlyRestClient = __webpack_require__(160);
 
-var _Database = __webpack_require__(58);
+var _Database = __webpack_require__(59);
 
 var INTERRUPT_REASON = 'repo_interrupt';
 /**
@@ -4812,7 +4795,7 @@ exports.Repo = Repo;
 
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4902,7 +4885,7 @@ exports.CacheNode = CacheNode;
 
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4975,7 +4958,7 @@ var minSafeInteger = exports.minSafeInteger = -9007199254740991;
 
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5097,7 +5080,7 @@ exports.Location = Location;
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5172,42 +5155,15 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _redux = __webpack_require__(36);
-
-var _AllReducers = __webpack_require__(110);
-
-var _AllReducers2 = _interopRequireDefault(_AllReducers);
-
-var _AllMiddleware = __webpack_require__(118);
-
-var _AllMiddleware2 = _interopRequireDefault(_AllMiddleware);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Store = (0, _redux.createStore)(_AllReducers2.default, _AllMiddleware2.default);
-
-exports.default = Store;
-
-/***/ }),
-/* 36 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(53);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
@@ -5234,6 +5190,116 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 
 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(23)))
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*! @license Firebase v4.3.1
+Build: rev-b4fe95f
+Terms: https://firebase.google.com/terms/ */
+
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _app = __webpack_require__(10);
+
+var _app2 = _interopRequireDefault(_app);
+
+__webpack_require__(127);
+
+__webpack_require__(128);
+
+__webpack_require__(168);
+
+__webpack_require__(184);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Export the single instance of firebase
+exports.default = _app2.default; /**
+                                 * Copyright 2017 Google Inc.
+                                 *
+                                 * Licensed under the Apache License, Version 2.0 (the "License");
+                                 * you may not use this file except in compliance with the License.
+                                 * You may obtain a copy of the License at
+                                 *
+                                 *   http://www.apache.org/licenses/LICENSE-2.0
+                                 *
+                                 * Unless required by applicable law or agreed to in writing, software
+                                 * distributed under the License is distributed on an "AS IS" BASIS,
+                                 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+                                 * See the License for the specific language governing permissions and
+                                 * limitations under the License.
+                                 */
+
+module.exports = exports['default'];
+//# sourceMappingURL=firebase-browser.js.map
+
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var apply = Function.prototype.apply;
+
+// DOM APIs, for completeness
+
+exports.setTimeout = function() {
+  return new Timeout(apply.call(setTimeout, window, arguments), clearTimeout);
+};
+exports.setInterval = function() {
+  return new Timeout(apply.call(setInterval, window, arguments), clearInterval);
+};
+exports.clearTimeout =
+exports.clearInterval = function(timeout) {
+  if (timeout) {
+    timeout.close();
+  }
+};
+
+function Timeout(id, clearFn) {
+  this._id = id;
+  this._clearFn = clearFn;
+}
+Timeout.prototype.unref = Timeout.prototype.ref = function() {};
+Timeout.prototype.close = function() {
+  this._clearFn.call(window, this._id);
+};
+
+// Does not start the time, just sets up the members needed.
+exports.enroll = function(item, msecs) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = msecs;
+};
+
+exports.unenroll = function(item) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = -1;
+};
+
+exports._unrefActive = exports.active = function(item) {
+  clearTimeout(item._idleTimeoutId);
+
+  var msecs = item._idleTimeout;
+  if (msecs >= 0) {
+    item._idleTimeoutId = setTimeout(function onTimeout() {
+      if (item._onTimeout)
+        item._onTimeout();
+    }, msecs);
+  }
+};
+
+// setimmediate attaches itself to the global object
+__webpack_require__(126);
+exports.setImmediate = setImmediate;
+exports.clearImmediate = clearImmediate;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36).setImmediate, __webpack_require__(36).clearImmediate))
 
 /***/ }),
 /* 37 */
@@ -5456,21 +5522,21 @@ var _util = __webpack_require__(1);
 
 var _NextPushId = __webpack_require__(136);
 
-var _Query = __webpack_require__(61);
+var _Query = __webpack_require__(62);
 
-var _Repo = __webpack_require__(30);
+var _Repo = __webpack_require__(29);
 
 var _Path = __webpack_require__(3);
 
 var _QueryParams = __webpack_require__(162);
 
-var _validation = __webpack_require__(14);
+var _validation = __webpack_require__(13);
 
-var _validation2 = __webpack_require__(13);
+var _validation2 = __webpack_require__(12);
 
-var _promise = __webpack_require__(12);
+var _promise = __webpack_require__(11);
 
-var _SyncPoint = __webpack_require__(73);
+var _SyncPoint = __webpack_require__(74);
 
 /**
 * Copyright 2017 Google Inc.
@@ -6976,13 +7042,13 @@ exports.RepoManager = undefined;
 
 var _obj = __webpack_require__(2);
 
-var _Repo = __webpack_require__(30);
+var _Repo = __webpack_require__(29);
 
 var _util = __webpack_require__(1);
 
-var _parser = __webpack_require__(59);
+var _parser = __webpack_require__(60);
 
-var _validation = __webpack_require__(14);
+var _validation = __webpack_require__(13);
 
 __webpack_require__(164);
 
@@ -7499,9 +7565,9 @@ var _json = __webpack_require__(171);
 
 var json = _interopRequireWildcard(_json);
 
-var _location = __webpack_require__(33);
+var _location = __webpack_require__(32);
 
-var _path = __webpack_require__(86);
+var _path = __webpack_require__(87);
 
 var path = _interopRequireWildcard(_path);
 
@@ -7703,7 +7769,7 @@ exports.makeDownloadUrl = makeDownloadUrl;
 exports.makeUploadUrl = makeUploadUrl;
 exports.makeQueryString = makeQueryString;
 
-var _constants = __webpack_require__(32);
+var _constants = __webpack_require__(31);
 
 var constants = _interopRequireWildcard(_constants);
 
@@ -7822,7 +7888,7 @@ function remove(array, elem) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 
 
@@ -8078,9 +8144,9 @@ var ActionTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(104);
 
 
 
@@ -8150,7 +8216,7 @@ function isPlainObject(value) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(98);
 
 
 /** Built-in value references. */
@@ -8231,6 +8297,23 @@ function compose() {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var AllViews = {
+    Login: '@Views.Login',
+    Home: '@Views.Home'
+};
+
+exports.default = AllViews;
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /*! @license Firebase v4.3.1
 Build: rev-b4fe95f
 Terms: https://firebase.google.com/terms/ */
@@ -8246,7 +8329,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 exports.createSubscribe = createSubscribe;
 exports.async = async;
 
-var _promise = __webpack_require__(12);
+var _promise = __webpack_require__(11);
 
 /**
  * Helper to make a Subscribe function (just like Promise helps make a
@@ -8456,7 +8539,7 @@ function noop() {
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8499,10 +8582,10 @@ if (typeof global !== 'undefined') {
 var globalScope = exports.globalScope = scope;
 //# sourceMappingURL=globalScope.js.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8590,7 +8673,7 @@ function patchProperty(obj, prop, value) {
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8607,21 +8690,21 @@ exports.DatabaseInternals = exports.Database = undefined;
 
 var _util = __webpack_require__(1);
 
-var _parser = __webpack_require__(59);
+var _parser = __webpack_require__(60);
 
 var _Path = __webpack_require__(3);
 
-var _promise = __webpack_require__(12);
+var _promise = __webpack_require__(11);
 
 var _Reference = __webpack_require__(39);
 
-var _Repo = __webpack_require__(30);
+var _Repo = __webpack_require__(29);
 
 var _RepoManager = __webpack_require__(44);
 
-var _validation = __webpack_require__(13);
+var _validation = __webpack_require__(12);
 
-var _validation2 = __webpack_require__(14);
+var _validation2 = __webpack_require__(13);
 
 /**
  * Class representing a firebase database.
@@ -8742,7 +8825,7 @@ exports.DatabaseInternals = DatabaseInternals;
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8759,7 +8842,7 @@ exports.parseURL = exports.parseRepoInfo = undefined;
 
 var _Path = __webpack_require__(3);
 
-var _RepoInfo = __webpack_require__(60);
+var _RepoInfo = __webpack_require__(61);
 
 var _util = __webpack_require__(1);
 
@@ -8879,7 +8962,7 @@ var parseURL = exports.parseURL = function parseURL(dataURL) {
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8915,9 +8998,9 @@ var _assert = __webpack_require__(0);
 
 var _obj = __webpack_require__(2);
 
-var _storage = __webpack_require__(26);
+var _storage = __webpack_require__(25);
 
-var _Constants = __webpack_require__(27);
+var _Constants = __webpack_require__(26);
 
 /**
  * A class that holds metadata about a Repo object
@@ -9009,7 +9092,7 @@ exports.RepoInfo = RepoInfo;
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9047,21 +9130,21 @@ var _KeyIndex = __webpack_require__(21);
 
 var _PriorityIndex = __webpack_require__(4);
 
-var _ValueIndex = __webpack_require__(63);
+var _ValueIndex = __webpack_require__(64);
 
-var _PathIndex = __webpack_require__(67);
+var _PathIndex = __webpack_require__(68);
 
 var _util = __webpack_require__(1);
 
 var _Path = __webpack_require__(3);
 
-var _validation = __webpack_require__(14);
+var _validation = __webpack_require__(13);
 
-var _validation2 = __webpack_require__(13);
+var _validation2 = __webpack_require__(12);
 
 var _EventRegistration = __webpack_require__(137);
 
-var _promise = __webpack_require__(12);
+var _promise = __webpack_require__(11);
 
 var __referenceConstructor;
 /**
@@ -9513,7 +9596,7 @@ exports.Query = Query;
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9583,7 +9666,7 @@ var validatePriorityNode = exports.validatePriorityNode = function validatePrior
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9598,7 +9681,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.VALUE_INDEX = exports.ValueIndex = undefined;
 
-var _Index = __webpack_require__(28);
+var _Index = __webpack_require__(27);
 
 var _Node = __webpack_require__(6);
 
@@ -9706,7 +9789,7 @@ var VALUE_INDEX = exports.VALUE_INDEX = new ValueIndex();
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9723,7 +9806,7 @@ exports.IndexMap = undefined;
 
 var _assert = __webpack_require__(0);
 
-var _childSet = __webpack_require__(65);
+var _childSet = __webpack_require__(66);
 
 var _obj = __webpack_require__(2);
 
@@ -9898,7 +9981,7 @@ exports.IndexMap = IndexMap;
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10041,7 +10124,7 @@ var buildChildSet = exports.buildChildSet = function buildChildSet(childList, cm
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10083,7 +10166,7 @@ function NAME_COMPARATOR(left, right) {
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10102,7 +10185,7 @@ var _assert = __webpack_require__(0);
 
 var _util = __webpack_require__(1);
 
-var _Index = __webpack_require__(28);
+var _Index = __webpack_require__(27);
 
 var _ChildrenNode = __webpack_require__(5);
 
@@ -10210,7 +10293,7 @@ exports.PathIndex = PathIndex;
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10225,9 +10308,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.DataSnapshot = undefined;
 
-var _validation = __webpack_require__(13);
+var _validation = __webpack_require__(12);
 
-var _validation2 = __webpack_require__(14);
+var _validation2 = __webpack_require__(13);
 
 var _Path = __webpack_require__(3);
 
@@ -10398,7 +10481,7 @@ exports.DataSnapshot = DataSnapshot;
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10434,9 +10517,9 @@ var _assert = __webpack_require__(0);
 
 var _Path = __webpack_require__(3);
 
-var _SparseSnapshotTree = __webpack_require__(70);
+var _SparseSnapshotTree = __webpack_require__(71);
 
-var _LeafNode = __webpack_require__(29);
+var _LeafNode = __webpack_require__(28);
 
 var _nodeFromJSON = __webpack_require__(22);
 
@@ -10520,7 +10603,7 @@ var resolveDeferredValueSnapshot = exports.resolveDeferredValueSnapshot = functi
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10539,7 +10622,7 @@ var _Path = __webpack_require__(3);
 
 var _PriorityIndex = __webpack_require__(4);
 
-var _CountedSet = __webpack_require__(71);
+var _CountedSet = __webpack_require__(72);
 
 /**
  * Helper class to store a sparse set of snapshots.
@@ -10702,7 +10785,7 @@ exports.SparseSnapshotTree = SparseSnapshotTree;
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10815,7 +10898,7 @@ exports.CountedSet = CountedSet;
 
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10830,7 +10913,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Overwrite = undefined;
 
-var _Operation = __webpack_require__(15);
+var _Operation = __webpack_require__(14);
 
 var _Path = __webpack_require__(3);
 
@@ -10878,7 +10961,7 @@ exports.Overwrite = Overwrite;
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10893,7 +10976,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SyncPoint = undefined;
 
-var _CacheNode = __webpack_require__(31);
+var _CacheNode = __webpack_require__(30);
 
 var _ChildrenNode = __webpack_require__(5);
 
@@ -10901,7 +10984,7 @@ var _assert = __webpack_require__(0);
 
 var _obj = __webpack_require__(2);
 
-var _ViewCache = __webpack_require__(74);
+var _ViewCache = __webpack_require__(75);
 
 var _View = __webpack_require__(143);
 
@@ -11132,7 +11215,7 @@ exports.SyncPoint = SyncPoint;
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11149,7 +11232,7 @@ exports.ViewCache = undefined;
 
 var _ChildrenNode = __webpack_require__(5);
 
-var _CacheNode = __webpack_require__(31);
+var _CacheNode = __webpack_require__(30);
 
 /**
  * Stores the data we have cached for a view.
@@ -11241,7 +11324,7 @@ exports.ViewCache = ViewCache;
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11301,7 +11384,7 @@ exports.StatsListener = StatsListener;
 
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11318,7 +11401,7 @@ exports.PersistentConnection = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _app = __webpack_require__(11);
+var _app = __webpack_require__(10);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -11338,13 +11421,13 @@ var _OnlineMonitor = __webpack_require__(156);
 
 var _jwt = __webpack_require__(157);
 
-var _Connection = __webpack_require__(78);
+var _Connection = __webpack_require__(79);
 
-var _constants = __webpack_require__(25);
+var _constants = __webpack_require__(24);
 
 var _environment = __webpack_require__(18);
 
-var _ServerActions = __webpack_require__(81);
+var _ServerActions = __webpack_require__(82);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12100,7 +12183,7 @@ exports.PersistentConnection = PersistentConnection;
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12193,7 +12276,7 @@ exports.EventEmitter = EventEmitter;
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12210,9 +12293,9 @@ exports.Connection = undefined;
 
 var _util = __webpack_require__(1);
 
-var _storage = __webpack_require__(26);
+var _storage = __webpack_require__(25);
 
-var _Constants = __webpack_require__(27);
+var _Constants = __webpack_require__(26);
 
 var _TransportManager = __webpack_require__(158);
 
@@ -12675,7 +12758,7 @@ exports.Connection = Connection;
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12692,13 +12775,13 @@ exports.FirebaseIFrameScriptHolder = exports.BrowserPollConnection = exports.FIR
 
 var _util = __webpack_require__(1);
 
-var _CountedSet = __webpack_require__(71);
+var _CountedSet = __webpack_require__(72);
 
 var _StatsManager = __webpack_require__(43);
 
 var _PacketReceiver = __webpack_require__(159);
 
-var _Constants = __webpack_require__(27);
+var _Constants = __webpack_require__(26);
 
 var _json = __webpack_require__(8);
 
@@ -13281,7 +13364,7 @@ exports.FirebaseIFrameScriptHolder = FirebaseIFrameScriptHolder;
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13297,7 +13380,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.WebSocketConnection = undefined;
 exports.setWebSocketImpl = setWebSocketImpl;
 
-var _app = __webpack_require__(11);
+var _app = __webpack_require__(10);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -13307,11 +13390,11 @@ var _util = __webpack_require__(1);
 
 var _StatsManager = __webpack_require__(43);
 
-var _Constants = __webpack_require__(27);
+var _Constants = __webpack_require__(26);
 
-var _constants = __webpack_require__(25);
+var _constants = __webpack_require__(24);
 
-var _storage = __webpack_require__(26);
+var _storage = __webpack_require__(25);
 
 var _json = __webpack_require__(8);
 
@@ -13647,7 +13730,7 @@ exports.WebSocketConnection = WebSocketConnection;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13730,7 +13813,7 @@ exports.ServerActions = ServerActions;
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13889,7 +13972,7 @@ exports.RangedFilter = RangedFilter;
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13966,7 +14049,7 @@ function taskStateFromInternalTaskState(state) {
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14007,7 +14090,7 @@ var ErrorCode = exports.ErrorCode = undefined;
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14026,13 +14109,13 @@ var _args = __webpack_require__(46);
 
 var args = _interopRequireWildcard(_args);
 
-var _blob = __webpack_require__(87);
+var _blob = __webpack_require__(88);
 
 var _error = __webpack_require__(9);
 
 var errorsExports = _interopRequireWildcard(_error);
 
-var _location = __webpack_require__(33);
+var _location = __webpack_require__(32);
 
 var _metadata = __webpack_require__(47);
 
@@ -14042,11 +14125,11 @@ var _object = __webpack_require__(20);
 
 var object = _interopRequireWildcard(_object);
 
-var _path = __webpack_require__(86);
+var _path = __webpack_require__(87);
 
 var path = _interopRequireWildcard(_path);
 
-var _requests = __webpack_require__(88);
+var _requests = __webpack_require__(89);
 
 var requests = _interopRequireWildcard(_requests);
 
@@ -14289,7 +14372,7 @@ exports.Reference = Reference;
 
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14365,7 +14448,7 @@ function lastComponent(path) {
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14513,7 +14596,7 @@ exports.FbsBlob = FbsBlob;
 
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14546,7 +14629,7 @@ var _array = __webpack_require__(49);
 
 var array = _interopRequireWildcard(_array);
 
-var _blob = __webpack_require__(87);
+var _blob = __webpack_require__(88);
 
 var _error = __webpack_require__(9);
 
@@ -14873,7 +14956,7 @@ function continueResumableUpload(location, authWrapper, url, blob, chunkSize, ma
 
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14904,7 +14987,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _errors = __webpack_require__(37);
 
-var _errors2 = __webpack_require__(34);
+var _errors2 = __webpack_require__(33);
 
 var _errors3 = _interopRequireDefault(_errors2);
 
@@ -14912,7 +14995,7 @@ var _tokenManager = __webpack_require__(186);
 
 var _tokenManager2 = _interopRequireDefault(_tokenManager);
 
-var _notificationPermission = __webpack_require__(91);
+var _notificationPermission = __webpack_require__(92);
 
 var _notificationPermission2 = _interopRequireDefault(_notificationPermission);
 
@@ -15067,7 +15150,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15110,7 +15193,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15148,7 +15231,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15203,152 +15286,96 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Helpers = __webpack_require__(94);
-
-var Helpers = _interopRequireWildcard(_Helpers);
-
-var _TestsAppReducer = __webpack_require__(191);
-
-var TestsAppReducer = _interopRequireWildcard(_TestsAppReducer);
-
-var _TestsAuthenticationMiddleware = __webpack_require__(192);
-
-var TestsAuthenticationMiddleware = _interopRequireWildcard(_TestsAuthenticationMiddleware);
-
-var _TestLoginReducer = __webpack_require__(193);
-
-var TestLoginReducer = _interopRequireWildcard(_TestLoginReducer);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-Helpers.esModuleTestRunner('AppReducer', TestsAppReducer);
-Helpers.esModuleTestRunner('AuthenticationMiddleware', TestsAuthenticationMiddleware);
-Helpers.esModuleTestRunner('LoginReducer', TestLoginReducer);
-
-Helpers.sumResults();
-
-/***/ }),
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
+__webpack_require__(95);
+
+var label = webix.ui({
+    view: "label",
+    label: "Welcome to the webix view",
+    inputWidth: 100,
+    align: "center"
 });
-exports.sumResults = exports.esModuleTestRunner = undefined;
-
-var _Store = __webpack_require__(35);
-
-var _Store2 = _interopRequireDefault(_Store);
-
-var _AllTypes = __webpack_require__(10);
-
-var _AllTypes2 = _interopRequireDefault(_AllTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var tableID = 'testOutput';
-var openBracket = '&#10094;';
-var closeBracket = '&#10095;';
-var passTick = '&#9989;';
-var failCross = '&#10060;';
-var openQuote = '&#10077;';
-var closeQuote = '&#10078;';
-
-var failCount = 0;
-var passCount = 0;
-
-var addCount = function addCount(passed) {
-    if (passed) passCount++;else failCount++;
-};
-
-var resetStoreSetLogin = function resetStoreSetLogin() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.RESET_STORE, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-};
-
-var createTitleRow = function createTitleRow(moduleName) {
-    var table = document.getElementById(tableID);
-    var length = table.rows.length;
-    var row = table.insertRow(length);
-    var cell0 = row.insertCell(0);
-    cell0.setAttribute('colspan', 2);
-    cell0.innerHTML = openBracket + '<b>' + moduleName + '</b>' + closeBracket;
-    cell0.style.borderTop = '1px solid black';
-};
-
-var createTestResultRow = function createTestResultRow(testName, outcome) {
-    var table = document.getElementById(tableID);
-    var length = table.rows.length;
-    var row = table.insertRow(length);
-
-    var cell0 = row.insertCell(0);
-    var cell1 = row.insertCell(1);
-    var color = true == outcome ? 'green' : 'red';
-
-    cell0.innerHTML = true == outcome ? passTick + ' Pass' : '' + failCross + ' Fail';
-    cell0.style.color = color;
-    cell1.innerHTML = openQuote + ' ' + testName + ' ' + closeQuote;
-    cell1.style.color = color;
-};
-
-var esModuleTestRunner = function esModuleTestRunner(moduleName, module) {
-    createTitleRow(moduleName);
-    Object.keys(module).forEach(function (key) {
-        var testName = module[key].name;
-        if (null !== testName && undefined !== testName) {
-            testName = testName.replace(/_/g, ' ');
-            var passed = false;
-            resetStoreSetLogin();
-            try {
-                passed = module[key]();
-            } catch (e) {/*if failed passed is still false*/}
-
-            addCount(passed);
-            createTestResultRow(testName, passed);
-        }
-    });
-};
-exports.esModuleTestRunner = esModuleTestRunner;
-
-
-var sumResults = function sumResults() {
-    var table = document.getElementById(tableID);
-    var row = table.insertRow(length);
-    var cell = row.insertCell(0);
-    cell.setAttribute('colspan', 2);
-    cell.innerHTML = openBracket + ' Total : ' + (passCount + failCount) + closeBracket;
-
-    row = table.insertRow(0);
-    cell = row.insertCell(0);
-    cell.setAttribute('colspan', 2);
-    cell.innerHTML = passTick + ' Pass total : ' + passCount;
-    cell.style.color = 'green';
-
-    row = table.insertRow(0);
-    cell = row.insertCell(0);
-    cell.setAttribute('colspan', 2);
-    cell.innerHTML = failCross + ' Fail total : ' + failCount;
-    cell.style.color = 'red';
-};
-exports.sumResults = sumResults;
 
 /***/ }),
 /* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Store = __webpack_require__(96);
+
+var _Store2 = _interopRequireDefault(_Store);
+
+var _AllTypes = __webpack_require__(17);
+
+var _AllTypes2 = _interopRequireDefault(_AllTypes);
+
+var _firebase = __webpack_require__(35);
+
+var firebase = _interopRequireWildcard(_firebase);
+
+__webpack_require__(191);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
+
+firebase.auth().onAuthStateChanged(function (user) {
+    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseReady, true));
+    fireBaseIsReady(user);
+});
+
+var fireBaseIsReady = function fireBaseIsReady(isLoggedIn) {
+    if (isLoggedIn) {
+        console.log("Firebase is ready and Logged in");
+    } else {
+        console.log("Firebase is ready and NOT Logged in");
+    }
+};
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redux = __webpack_require__(34);
+
+var _AllReducers = __webpack_require__(112);
+
+var _AllReducers2 = _interopRequireDefault(_AllReducers);
+
+var _AllMiddleware = __webpack_require__(120);
+
+var _AllMiddleware2 = _interopRequireDefault(_AllMiddleware);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Store = (0, _redux.createStore)(_AllReducers2.default, _AllMiddleware2.default);
+
+exports.default = Store;
+
+/***/ }),
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(101);
 
 
 
@@ -15380,11 +15407,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(99);
 
 
 /** Detect free variable `self`. */
@@ -15397,7 +15424,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15406,10 +15433,10 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(17)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(16)))
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15463,7 +15490,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15492,11 +15519,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(103);
 
 
 /** Built-in value references. */
@@ -15506,7 +15533,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15528,7 +15555,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15564,14 +15591,14 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(104);
+module.exports = __webpack_require__(106);
 
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15581,7 +15608,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(106);
+var _ponyfill = __webpack_require__(108);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -15604,10 +15631,10 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(105)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16), __webpack_require__(107)(module)))
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -15635,7 +15662,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15664,7 +15691,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15805,7 +15832,7 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(23)))
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15859,7 +15886,7 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15915,7 +15942,7 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15925,17 +15952,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _redux = __webpack_require__(36);
+var _redux = __webpack_require__(34);
 
-var _AppReducer = __webpack_require__(111);
+var _AppReducer = __webpack_require__(113);
 
 var _AppReducer2 = _interopRequireDefault(_AppReducer);
 
-var _NotificationsReducer = __webpack_require__(116);
+var _NotificationsReducer = __webpack_require__(118);
 
 var _NotificationsReducer2 = _interopRequireDefault(_NotificationsReducer);
 
-var _LoginReducer = __webpack_require__(117);
+var _LoginReducer = __webpack_require__(119);
 
 var _LoginReducer2 = _interopRequireDefault(_LoginReducer);
 
@@ -15950,7 +15977,7 @@ var AllReducers = (0, _redux.combineReducers)({
 exports.default = AllReducers;
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15960,11 +15987,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _AllTypes = __webpack_require__(10);
+var _AllTypes = __webpack_require__(17);
 
 var _AllTypes2 = _interopRequireDefault(_AllTypes);
 
-var _AllViews = __webpack_require__(24);
+var _AllViews = __webpack_require__(55);
 
 var _AllViews2 = _interopRequireDefault(_AllViews);
 
@@ -16014,7 +16041,7 @@ var AppReducer = function AppReducer() {
 exports.default = AppReducer;
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16030,7 +16057,7 @@ var FireBase = {
 exports.default = FireBase;
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16048,7 +16075,7 @@ var App = {
 exports.default = App;
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16063,7 +16090,7 @@ var Notifications = {
 exports.default = Notifications;
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16078,7 +16105,7 @@ var Login = {
 exports.default = Login;
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16088,7 +16115,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _AllTypes = __webpack_require__(10);
+var _AllTypes = __webpack_require__(17);
 
 var _AllTypes2 = _interopRequireDefault(_AllTypes);
 
@@ -16127,7 +16154,7 @@ var NotificationsReducer = function NotificationsReducer() {
 exports.default = NotificationsReducer;
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16137,11 +16164,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _AllTypes = __webpack_require__(10);
+var _AllTypes = __webpack_require__(17);
 
 var _AllTypes2 = _interopRequireDefault(_AllTypes);
 
-var _AllViews = __webpack_require__(24);
+var _AllViews = __webpack_require__(55);
 
 var _AllViews2 = _interopRequireDefault(_AllViews);
 
@@ -16169,7 +16196,7 @@ var LoginReducer = function LoginReducer() {
 exports.default = LoginReducer;
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16179,11 +16206,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _redux = __webpack_require__(36);
+var _redux = __webpack_require__(34);
 
-var _reduxLogger = __webpack_require__(119);
+var _reduxLogger = __webpack_require__(121);
 
-var _FireBaseMiddleware = __webpack_require__(120);
+var _FireBaseMiddleware = __webpack_require__(122);
 
 var _FireBaseMiddleware2 = _interopRequireDefault(_FireBaseMiddleware);
 
@@ -16198,15 +16225,15 @@ var AllMiddleware = (0, _redux.applyMiddleware)(_reduxLogger.logger, _FireBaseMi
 exports.default = AllMiddleware;
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {!function(e,t){ true?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t(e.reduxLogger=e.reduxLogger||{})}(this,function(e){"use strict";function t(e,t){e.super_=t,e.prototype=Object.create(t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}})}function r(e,t){Object.defineProperty(this,"kind",{value:e,enumerable:!0}),t&&t.length&&Object.defineProperty(this,"path",{value:t,enumerable:!0})}function n(e,t,r){n.super_.call(this,"E",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0}),Object.defineProperty(this,"rhs",{value:r,enumerable:!0})}function o(e,t){o.super_.call(this,"N",e),Object.defineProperty(this,"rhs",{value:t,enumerable:!0})}function i(e,t){i.super_.call(this,"D",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0})}function a(e,t,r){a.super_.call(this,"A",e),Object.defineProperty(this,"index",{value:t,enumerable:!0}),Object.defineProperty(this,"item",{value:r,enumerable:!0})}function f(e,t,r){var n=e.slice((r||t)+1||e.length);return e.length=t<0?e.length+t:t,e.push.apply(e,n),e}function u(e){var t="undefined"==typeof e?"undefined":N(e);return"object"!==t?t:e===Math?"math":null===e?"null":Array.isArray(e)?"array":"[object Date]"===Object.prototype.toString.call(e)?"date":"function"==typeof e.toString&&/^\/.*\//.test(e.toString())?"regexp":"object"}function l(e,t,r,c,s,d,p){s=s||[],p=p||[];var g=s.slice(0);if("undefined"!=typeof d){if(c){if("function"==typeof c&&c(g,d))return;if("object"===("undefined"==typeof c?"undefined":N(c))){if(c.prefilter&&c.prefilter(g,d))return;if(c.normalize){var h=c.normalize(g,d,e,t);h&&(e=h[0],t=h[1])}}}g.push(d)}"regexp"===u(e)&&"regexp"===u(t)&&(e=e.toString(),t=t.toString());var y="undefined"==typeof e?"undefined":N(e),v="undefined"==typeof t?"undefined":N(t),b="undefined"!==y||p&&p[p.length-1].lhs&&p[p.length-1].lhs.hasOwnProperty(d),m="undefined"!==v||p&&p[p.length-1].rhs&&p[p.length-1].rhs.hasOwnProperty(d);if(!b&&m)r(new o(g,t));else if(!m&&b)r(new i(g,e));else if(u(e)!==u(t))r(new n(g,e,t));else if("date"===u(e)&&e-t!==0)r(new n(g,e,t));else if("object"===y&&null!==e&&null!==t)if(p.filter(function(t){return t.lhs===e}).length)e!==t&&r(new n(g,e,t));else{if(p.push({lhs:e,rhs:t}),Array.isArray(e)){var w;e.length;for(w=0;w<e.length;w++)w>=t.length?r(new a(g,w,new i(void 0,e[w]))):l(e[w],t[w],r,c,g,w,p);for(;w<t.length;)r(new a(g,w,new o(void 0,t[w++])))}else{var x=Object.keys(e),S=Object.keys(t);x.forEach(function(n,o){var i=S.indexOf(n);i>=0?(l(e[n],t[n],r,c,g,n,p),S=f(S,i)):l(e[n],void 0,r,c,g,n,p)}),S.forEach(function(e){l(void 0,t[e],r,c,g,e,p)})}p.length=p.length-1}else e!==t&&("number"===y&&isNaN(e)&&isNaN(t)||r(new n(g,e,t)))}function c(e,t,r,n){return n=n||[],l(e,t,function(e){e&&n.push(e)},r),n.length?n:void 0}function s(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":s(o[r.path[n]],r.index,r.item);break;case"D":delete o[r.path[n]];break;case"E":case"N":o[r.path[n]]=r.rhs}}else switch(r.kind){case"A":s(e[t],r.index,r.item);break;case"D":e=f(e,t);break;case"E":case"N":e[t]=r.rhs}return e}function d(e,t,r){if(e&&t&&r&&r.kind){for(var n=e,o=-1,i=r.path?r.path.length-1:0;++o<i;)"undefined"==typeof n[r.path[o]]&&(n[r.path[o]]="number"==typeof r.path[o]?[]:{}),n=n[r.path[o]];switch(r.kind){case"A":s(r.path?n[r.path[o]]:n,r.index,r.item);break;case"D":delete n[r.path[o]];break;case"E":case"N":n[r.path[o]]=r.rhs}}}function p(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":p(o[r.path[n]],r.index,r.item);break;case"D":o[r.path[n]]=r.lhs;break;case"E":o[r.path[n]]=r.lhs;break;case"N":delete o[r.path[n]]}}else switch(r.kind){case"A":p(e[t],r.index,r.item);break;case"D":e[t]=r.lhs;break;case"E":e[t]=r.lhs;break;case"N":e=f(e,t)}return e}function g(e,t,r){if(e&&t&&r&&r.kind){var n,o,i=e;for(o=r.path.length-1,n=0;n<o;n++)"undefined"==typeof i[r.path[n]]&&(i[r.path[n]]={}),i=i[r.path[n]];switch(r.kind){case"A":p(i[r.path[n]],r.index,r.item);break;case"D":i[r.path[n]]=r.lhs;break;case"E":i[r.path[n]]=r.lhs;break;case"N":delete i[r.path[n]]}}}function h(e,t,r){if(e&&t){var n=function(n){r&&!r(e,t,n)||d(e,t,n)};l(e,t,n)}}function y(e){return"color: "+F[e].color+"; font-weight: bold"}function v(e){var t=e.kind,r=e.path,n=e.lhs,o=e.rhs,i=e.index,a=e.item;switch(t){case"E":return[r.join("."),n,"→",o];case"N":return[r.join("."),o];case"D":return[r.join(".")];case"A":return[r.join(".")+"["+i+"]",a];default:return[]}}function b(e,t,r,n){var o=c(e,t);try{n?r.groupCollapsed("diff"):r.group("diff")}catch(e){r.log("diff")}o?o.forEach(function(e){var t=e.kind,n=v(e);r.log.apply(r,["%c "+F[t].text,y(t)].concat(P(n)))}):r.log("—— no diff ——");try{r.groupEnd()}catch(e){r.log("—— diff end —— ")}}function m(e,t,r,n){switch("undefined"==typeof e?"undefined":N(e)){case"object":return"function"==typeof e[n]?e[n].apply(e,P(r)):e[n];case"function":return e(t);default:return e}}function w(e){var t=e.timestamp,r=e.duration;return function(e,n,o){var i=["action"];return i.push("%c"+String(e.type)),t&&i.push("%c@ "+n),r&&i.push("%c(in "+o.toFixed(2)+" ms)"),i.join(" ")}}function x(e,t){var r=t.logger,n=t.actionTransformer,o=t.titleFormatter,i=void 0===o?w(t):o,a=t.collapsed,f=t.colors,u=t.level,l=t.diff,c="undefined"==typeof t.titleFormatter;e.forEach(function(o,s){var d=o.started,p=o.startedTime,g=o.action,h=o.prevState,y=o.error,v=o.took,w=o.nextState,x=e[s+1];x&&(w=x.prevState,v=x.started-d);var S=n(g),k="function"==typeof a?a(function(){return w},g,o):a,j=D(p),E=f.title?"color: "+f.title(S)+";":"",A=["color: gray; font-weight: lighter;"];A.push(E),t.timestamp&&A.push("color: gray; font-weight: lighter;"),t.duration&&A.push("color: gray; font-weight: lighter;");var O=i(S,j,v);try{k?f.title&&c?r.groupCollapsed.apply(r,["%c "+O].concat(A)):r.groupCollapsed(O):f.title&&c?r.group.apply(r,["%c "+O].concat(A)):r.group(O)}catch(e){r.log(O)}var N=m(u,S,[h],"prevState"),P=m(u,S,[S],"action"),C=m(u,S,[y,h],"error"),F=m(u,S,[w],"nextState");if(N)if(f.prevState){var L="color: "+f.prevState(h)+"; font-weight: bold";r[N]("%c prev state",L,h)}else r[N]("prev state",h);if(P)if(f.action){var T="color: "+f.action(S)+"; font-weight: bold";r[P]("%c action    ",T,S)}else r[P]("action    ",S);if(y&&C)if(f.error){var M="color: "+f.error(y,h)+"; font-weight: bold;";r[C]("%c error     ",M,y)}else r[C]("error     ",y);if(F)if(f.nextState){var _="color: "+f.nextState(w)+"; font-weight: bold";r[F]("%c next state",_,w)}else r[F]("next state",w);l&&b(h,w,r,k);try{r.groupEnd()}catch(e){r.log("—— log end ——")}})}function S(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=Object.assign({},L,e),r=t.logger,n=t.stateTransformer,o=t.errorTransformer,i=t.predicate,a=t.logErrors,f=t.diffPredicate;if("undefined"==typeof r)return function(){return function(e){return function(t){return e(t)}}};if(e.getState&&e.dispatch)return console.error("[redux-logger] redux-logger not installed. Make sure to pass logger instance as middleware:\n// Logger with default options\nimport { logger } from 'redux-logger'\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n// Or you can create your own logger with custom options http://bit.ly/redux-logger-options\nimport createLogger from 'redux-logger'\nconst logger = createLogger({\n  // ...options\n});\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n"),function(){return function(e){return function(t){return e(t)}}};var u=[];return function(e){var r=e.getState;return function(e){return function(l){if("function"==typeof i&&!i(r,l))return e(l);var c={};u.push(c),c.started=O.now(),c.startedTime=new Date,c.prevState=n(r()),c.action=l;var s=void 0;if(a)try{s=e(l)}catch(e){c.error=o(e)}else s=e(l);c.took=O.now()-c.started,c.nextState=n(r());var d=t.diff&&"function"==typeof f?f(r,l):t.diff;if(x(u,Object.assign({},t,{diff:d})),u.length=0,c.error)throw c.error;return s}}}}var k,j,E=function(e,t){return new Array(t+1).join(e)},A=function(e,t){return E("0",t-e.toString().length)+e},D=function(e){return A(e.getHours(),2)+":"+A(e.getMinutes(),2)+":"+A(e.getSeconds(),2)+"."+A(e.getMilliseconds(),3)},O="undefined"!=typeof performance&&null!==performance&&"function"==typeof performance.now?performance:Date,N="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},P=function(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)},C=[];k="object"===("undefined"==typeof global?"undefined":N(global))&&global?global:"undefined"!=typeof window?window:{},j=k.DeepDiff,j&&C.push(function(){"undefined"!=typeof j&&k.DeepDiff===c&&(k.DeepDiff=j,j=void 0)}),t(n,r),t(o,r),t(i,r),t(a,r),Object.defineProperties(c,{diff:{value:c,enumerable:!0},observableDiff:{value:l,enumerable:!0},applyDiff:{value:h,enumerable:!0},applyChange:{value:d,enumerable:!0},revertChange:{value:g,enumerable:!0},isConflict:{value:function(){return"undefined"!=typeof j},enumerable:!0},noConflict:{value:function(){return C&&(C.forEach(function(e){e()}),C=null),c},enumerable:!0}});var F={E:{color:"#2196F3",text:"CHANGED:"},N:{color:"#4CAF50",text:"ADDED:"},D:{color:"#F44336",text:"DELETED:"},A:{color:"#2196F3",text:"ARRAY:"}},L={level:"log",logger:console,logErrors:!0,collapsed:void 0,predicate:void 0,duration:!1,timestamp:!0,stateTransformer:function(e){return e},actionTransformer:function(e){return e},errorTransformer:function(e){return e},colors:{title:function(){return"inherit"},prevState:function(){return"#9E9E9E"},action:function(){return"#03A9F4"},nextState:function(){return"#4CAF50"},error:function(){return"#F20404"}},diff:!1,diffPredicate:void 0,transformer:void 0},T=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=e.dispatch,r=e.getState;return"function"==typeof t||"function"==typeof r?S()({dispatch:t,getState:r}):void console.error("\n[redux-logger v3] BREAKING CHANGE\n[redux-logger v3] Since 3.0.0 redux-logger exports by default logger with default settings.\n[redux-logger v3] Change\n[redux-logger v3] import createLogger from 'redux-logger'\n[redux-logger v3] to\n[redux-logger v3] import { createLogger } from 'redux-logger'\n")};e.defaults=L,e.createLogger=S,e.logger=T,e.default=T,Object.defineProperty(e,"__esModule",{value:!0})});
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16216,11 +16243,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _firebase = __webpack_require__(121);
+var _firebase = __webpack_require__(35);
 
 var firebase = _interopRequireWildcard(_firebase);
 
-var _AllTypes = __webpack_require__(10);
+var _AllTypes = __webpack_require__(17);
 
 var _AllTypes2 = _interopRequireDefault(_AllTypes);
 
@@ -16260,57 +16287,7 @@ var FirebaseMiddleware = function FirebaseMiddleware(store) {
 exports.default = FirebaseMiddleware;
 
 /***/ }),
-/* 121 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*! @license Firebase v4.3.1
-Build: rev-b4fe95f
-Terms: https://firebase.google.com/terms/ */
-
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _app = __webpack_require__(11);
-
-var _app2 = _interopRequireDefault(_app);
-
-__webpack_require__(127);
-
-__webpack_require__(128);
-
-__webpack_require__(168);
-
-__webpack_require__(184);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// Export the single instance of firebase
-exports.default = _app2.default; /**
-                                 * Copyright 2017 Google Inc.
-                                 *
-                                 * Licensed under the Apache License, Version 2.0 (the "License");
-                                 * you may not use this file except in compliance with the License.
-                                 * You may obtain a copy of the License at
-                                 *
-                                 *   http://www.apache.org/licenses/LICENSE-2.0
-                                 *
-                                 * Unless required by applicable law or agreed to in writing, software
-                                 * distributed under the License is distributed on an "AS IS" BASIS,
-                                 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-                                 * See the License for the specific language governing permissions and
-                                 * limitations under the License.
-                                 */
-
-module.exports = exports['default'];
-//# sourceMappingURL=firebase-browser.js.map
-
-
-/***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16406,7 +16383,7 @@ if (!Array.prototype.find) {
 
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16421,13 +16398,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.createFirebaseNamespace = createFirebaseNamespace;
 
-var _subscribe = __webpack_require__(55);
+var _subscribe = __webpack_require__(56);
 
 var _errors = __webpack_require__(37);
 
-var _promise = __webpack_require__(12);
+var _promise = __webpack_require__(11);
 
-var _deep_copy = __webpack_require__(57);
+var _deep_copy = __webpack_require__(58);
 
 /**
 * Copyright 2017 Google Inc.
@@ -16791,7 +16768,7 @@ var appErrors = new _errors.ErrorFactory('app', 'Firebase', errors);
 
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(setImmediate) {(function (root) {
@@ -17028,66 +17005,7 @@ var appErrors = new _errors.ErrorFactory('app', 'Firebase', errors);
 
 })(this);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(125).setImmediate))
-
-/***/ }),
-/* 125 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var apply = Function.prototype.apply;
-
-// DOM APIs, for completeness
-
-exports.setTimeout = function() {
-  return new Timeout(apply.call(setTimeout, window, arguments), clearTimeout);
-};
-exports.setInterval = function() {
-  return new Timeout(apply.call(setInterval, window, arguments), clearInterval);
-};
-exports.clearTimeout =
-exports.clearInterval = function(timeout) {
-  if (timeout) {
-    timeout.close();
-  }
-};
-
-function Timeout(id, clearFn) {
-  this._id = id;
-  this._clearFn = clearFn;
-}
-Timeout.prototype.unref = Timeout.prototype.ref = function() {};
-Timeout.prototype.close = function() {
-  this._clearFn.call(window, this._id);
-};
-
-// Does not start the time, just sets up the members needed.
-exports.enroll = function(item, msecs) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = msecs;
-};
-
-exports.unenroll = function(item) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = -1;
-};
-
-exports._unrefActive = exports.active = function(item) {
-  clearTimeout(item._idleTimeoutId);
-
-  var msecs = item._idleTimeout;
-  if (msecs >= 0) {
-    item._idleTimeoutId = setTimeout(function onTimeout() {
-      if (item._onTimeout)
-        item._onTimeout();
-    }, msecs);
-  }
-};
-
-// setimmediate attaches itself to the global object
-__webpack_require__(126);
-exports.setImmediate = setImmediate;
-exports.clearImmediate = clearImmediate;
-
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36).setImmediate))
 
 /***/ }),
 /* 126 */
@@ -17280,7 +17198,7 @@ exports.clearImmediate = clearImmediate;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(23)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16), __webpack_require__(23)))
 
 /***/ }),
 /* 127 */
@@ -17290,7 +17208,7 @@ exports.clearImmediate = clearImmediate;
 Build: rev-b4fe95f
 Terms: https://firebase.google.com/terms/ */
 
-var firebase = __webpack_require__(11);
+var firebase = __webpack_require__(10);
 (function(){(function(){var h,aa=aa||{},k=this,ba=function(a){return void 0!==a},m=function(a){return"string"==typeof a},ca=function(a){return"boolean"==typeof a},da=function(a){return"number"==typeof a},ea=function(){},fa=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&
 !a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},ha=function(a){return null===a},ia=function(a){return"array"==fa(a)},ja=function(a){var b=fa(a);return"array"==b||"object"==b&&"number"==typeof a.length},p=function(a){return"function"==fa(a)},q=function(a){var b=
 typeof a;return"object"==b&&null!=a||"function"==b},ka=function(a,b,c){return a.call.apply(a.bind,arguments)},la=function(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}},r=function(a,b,c){r=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?ka:la;return r.apply(null,
@@ -17585,7 +17503,7 @@ Z(Lg,"credential",Ng,[V("verificationId"),V("verificationCode")]);Y(Lg.prototype
 (function(){if("undefined"!==typeof firebase&&firebase.INTERNAL&&firebase.INTERNAL.registerService){var a={Auth:T,Error:O};Z(a,"EmailAuthProvider",Gg,[]);Z(a,"FacebookAuthProvider",vg,[]);Z(a,"GithubAuthProvider",xg,[]);Z(a,"GoogleAuthProvider",zg,[]);Z(a,"TwitterAuthProvider",Bg,[]);Z(a,"OAuthProvider",P,[V("providerId")]);Z(a,"PhoneAuthProvider",Lg,[Tk()]);Z(a,"RecaptchaVerifier",ii,[X(V(),Sk(),"recaptchaContainer"),W("recaptchaParameters",!0),Uk()]);firebase.INTERNAL.registerService("auth",function(a,
 c){a=new T(a);c({INTERNAL:{getUid:r(a.getUid,a),getToken:r(a.Cf,a),addAuthTokenListener:r(a.hf,a),removeAuthTokenListener:r(a.gg,a)}});return a},a,function(a,c){if("create"===a)try{c.auth()}catch(d){}});firebase.INTERNAL.extendNamespace({User:S})}else throw Error("Cannot find the firebase namespace; be sure to include firebase-app.js before this library.");})();}).call(this);
 }).call(typeof global !== undefined ? global : typeof self !== undefined ? self : typeof window !== undefined ? window : {});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
 
 /***/ }),
 /* 128 */
@@ -17626,13 +17544,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.registerDatabase = registerDatabase;
 
-var _app = __webpack_require__(11);
+var _app = __webpack_require__(10);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _Database = __webpack_require__(58);
+var _Database = __webpack_require__(59);
 
-var _Query = __webpack_require__(61);
+var _Query = __webpack_require__(62);
 
 var _Reference = __webpack_require__(39);
 
@@ -17708,7 +17626,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.base64 = undefined;
 
-var _globalScope = __webpack_require__(56);
+var _globalScope = __webpack_require__(57);
 
 var stringToByteArray = function stringToByteArray(str) {
     var output = [],
@@ -18491,13 +18409,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.OnDisconnect = undefined;
 
-var _validation = __webpack_require__(13);
+var _validation = __webpack_require__(12);
 
-var _validation2 = __webpack_require__(14);
+var _validation2 = __webpack_require__(13);
 
 var _util = __webpack_require__(1);
 
-var _promise = __webpack_require__(12);
+var _promise = __webpack_require__(11);
 
 /**
  * @constructor
@@ -18623,7 +18541,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.TransactionResult = undefined;
 
-var _validation = __webpack_require__(13);
+var _validation = __webpack_require__(12);
 
 var TransactionResult = function () {
     /**
@@ -18771,7 +18689,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ChildEventRegistration = exports.ValueEventRegistration = undefined;
 
-var _DataSnapshot = __webpack_require__(68);
+var _DataSnapshot = __webpack_require__(69);
 
 var _Event = __webpack_require__(138);
 
@@ -19135,13 +19053,13 @@ var _ListenComplete = __webpack_require__(141);
 
 var _Merge = __webpack_require__(142);
 
-var _Operation = __webpack_require__(15);
+var _Operation = __webpack_require__(14);
 
-var _Overwrite = __webpack_require__(72);
+var _Overwrite = __webpack_require__(73);
 
 var _Path = __webpack_require__(3);
 
-var _SyncPoint = __webpack_require__(73);
+var _SyncPoint = __webpack_require__(74);
 
 var _WriteTree = __webpack_require__(148);
 
@@ -19837,7 +19755,7 @@ var _assert = __webpack_require__(0);
 
 var _Path = __webpack_require__(3);
 
-var _Operation = __webpack_require__(15);
+var _Operation = __webpack_require__(14);
 
 var AckUserWrite = function () {
     /**
@@ -19912,7 +19830,7 @@ exports.ListenComplete = undefined;
 
 var _Path = __webpack_require__(3);
 
-var _Operation = __webpack_require__(15);
+var _Operation = __webpack_require__(14);
 
 /**
  * @param {!OperationSource} source
@@ -19971,9 +19889,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Merge = undefined;
 
-var _Operation = __webpack_require__(15);
+var _Operation = __webpack_require__(14);
 
-var _Overwrite = __webpack_require__(72);
+var _Overwrite = __webpack_require__(73);
 
 var _Path = __webpack_require__(3);
 
@@ -20067,15 +19985,15 @@ var _ViewProcessor = __webpack_require__(144);
 
 var _ChildrenNode = __webpack_require__(5);
 
-var _CacheNode = __webpack_require__(31);
+var _CacheNode = __webpack_require__(30);
 
-var _ViewCache = __webpack_require__(74);
+var _ViewCache = __webpack_require__(75);
 
 var _EventGenerator = __webpack_require__(147);
 
 var _assert = __webpack_require__(0);
 
-var _Operation = __webpack_require__(15);
+var _Operation = __webpack_require__(14);
 
 var _Change = __webpack_require__(19);
 
@@ -20287,7 +20205,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ViewProcessor = exports.ProcessorResult = undefined;
 
-var _Operation = __webpack_require__(15);
+var _Operation = __webpack_require__(14);
 
 var _assert = __webpack_require__(0);
 
@@ -20906,7 +20824,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.WriteTreeCompleteChildSource = exports.NO_COMPLETE_CHILD_SOURCE = exports.NoCompleteChildSource_ = undefined;
 
-var _CacheNode = __webpack_require__(31);
+var _CacheNode = __webpack_require__(30);
 
 /**
  * An implementation of CompleteChildSource that never returns any additional children
@@ -22148,7 +22066,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.StatsCollection = undefined;
 
-var _deep_copy = __webpack_require__(57);
+var _deep_copy = __webpack_require__(58);
 
 var _obj = __webpack_require__(2);
 
@@ -22212,7 +22130,7 @@ var _obj = __webpack_require__(2);
 
 var _util = __webpack_require__(1);
 
-var _StatsListener = __webpack_require__(75);
+var _StatsListener = __webpack_require__(76);
 
 // Assuming some apps may have a short amount of time on page, and a bulk of firebase operations probably
 // happen on page load, we try to report our first set of stats pretty quickly, but we wait at least 10
@@ -22480,7 +22398,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.VisibilityMonitor = undefined;
 
-var _EventEmitter = __webpack_require__(77);
+var _EventEmitter = __webpack_require__(78);
 
 var _assert = __webpack_require__(0);
 
@@ -22592,7 +22510,7 @@ exports.OnlineMonitor = undefined;
 
 var _assert = __webpack_require__(0);
 
-var _EventEmitter = __webpack_require__(77);
+var _EventEmitter = __webpack_require__(78);
 
 var _environment = __webpack_require__(18);
 
@@ -22849,9 +22767,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.TransportManager = undefined;
 
-var _BrowserPollConnection = __webpack_require__(79);
+var _BrowserPollConnection = __webpack_require__(80);
 
-var _WebSocketConnection = __webpack_require__(80);
+var _WebSocketConnection = __webpack_require__(81);
 
 var _util = __webpack_require__(1);
 
@@ -23071,7 +22989,7 @@ var _obj = __webpack_require__(2);
 
 var _util2 = __webpack_require__(161);
 
-var _ServerActions = __webpack_require__(81);
+var _ServerActions = __webpack_require__(82);
 
 /**
 * Copyright 2017 Google Inc.
@@ -23344,15 +23262,15 @@ var _KeyIndex = __webpack_require__(21);
 
 var _PriorityIndex = __webpack_require__(4);
 
-var _ValueIndex = __webpack_require__(63);
+var _ValueIndex = __webpack_require__(64);
 
-var _PathIndex = __webpack_require__(67);
+var _PathIndex = __webpack_require__(68);
 
 var _IndexedFilter = __webpack_require__(42);
 
 var _LimitedFilter = __webpack_require__(163);
 
-var _RangedFilter = __webpack_require__(82);
+var _RangedFilter = __webpack_require__(83);
 
 var _json = __webpack_require__(8);
 
@@ -23755,7 +23673,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.LimitedFilter = undefined;
 
-var _RangedFilter = __webpack_require__(82);
+var _RangedFilter = __webpack_require__(83);
 
 var _ChildrenNode = __webpack_require__(5);
 
@@ -24030,7 +23948,7 @@ var _assert = __webpack_require__(0);
 
 var _Reference = __webpack_require__(39);
 
-var _DataSnapshot = __webpack_require__(68);
+var _DataSnapshot = __webpack_require__(69);
 
 var _Path = __webpack_require__(3);
 
@@ -24040,9 +23958,9 @@ var _PriorityIndex = __webpack_require__(4);
 
 var _util = __webpack_require__(1);
 
-var _ServerValues = __webpack_require__(69);
+var _ServerValues = __webpack_require__(70);
 
-var _validation = __webpack_require__(14);
+var _validation = __webpack_require__(13);
 
 var _obj = __webpack_require__(2);
 
@@ -24050,7 +23968,7 @@ var _nodeFromJSON = __webpack_require__(22);
 
 var _ChildrenNode = __webpack_require__(5);
 
-var _Repo = __webpack_require__(30);
+var _Repo = __webpack_require__(29);
 
 // TODO: This is pretty messy.  Ideally, a lot of this would move into FirebaseData, or a transaction-specific
 // component used by FirebaseData, but it has ties to user callbacks (transaction update and onComplete) as well
@@ -24829,9 +24747,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.interceptServerData = exports.dataUpdateCount = exports.statsIncrementCounter = exports.stats = exports.setSecurityDebugCallback = exports.isWebSocketsAvailable = exports.forceWebSockets = exports.forceLongPolling = undefined;
 
-var _WebSocketConnection = __webpack_require__(80);
+var _WebSocketConnection = __webpack_require__(81);
 
-var _BrowserPollConnection = __webpack_require__(79);
+var _BrowserPollConnection = __webpack_require__(80);
 
 /**
  * INTERNAL methods for internal-use only (tests, etc.).
@@ -24900,13 +24818,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.forceRestClient = exports.listens = exports.queryIdentifier = exports.ConnectionTarget = exports.hijackHash = exports.RealTimeConnection = exports.DataConnection = undefined;
 
-var _RepoInfo = __webpack_require__(60);
+var _RepoInfo = __webpack_require__(61);
 
-var _PersistentConnection = __webpack_require__(76);
+var _PersistentConnection = __webpack_require__(77);
 
 var _RepoManager = __webpack_require__(44);
 
-var _Connection = __webpack_require__(78);
+var _Connection = __webpack_require__(79);
 
 /**
 * Copyright 2017 Google Inc.
@@ -25003,15 +24921,15 @@ exports.registerStorage = registerStorage;
 
 var _string = __webpack_require__(45);
 
-var _taskenums = __webpack_require__(83);
+var _taskenums = __webpack_require__(84);
 
 var _xhriopool = __webpack_require__(169);
 
-var _reference = __webpack_require__(85);
+var _reference = __webpack_require__(86);
 
 var _service = __webpack_require__(178);
 
-var _app = __webpack_require__(11);
+var _app = __webpack_require__(10);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -25126,7 +25044,7 @@ var _object = __webpack_require__(20);
 
 var object = _interopRequireWildcard(_object);
 
-var _promise_external = __webpack_require__(16);
+var _promise_external = __webpack_require__(15);
 
 var promiseimpl = _interopRequireWildcard(_promise_external);
 
@@ -25134,7 +25052,7 @@ var _type = __webpack_require__(7);
 
 var type = _interopRequireWildcard(_type);
 
-var _xhrio = __webpack_require__(84);
+var _xhrio = __webpack_require__(85);
 
 var XhrIoExports = _interopRequireWildcard(_xhrio);
 
@@ -25465,7 +25383,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.UploadTask = undefined;
 
-var _taskenums = __webpack_require__(83);
+var _taskenums = __webpack_require__(84);
 
 var fbsTaskEnums = _interopRequireWildcard(_taskenums);
 
@@ -25487,11 +25405,11 @@ var _error = __webpack_require__(9);
 
 var errors = _interopRequireWildcard(_error);
 
-var _promise_external = __webpack_require__(16);
+var _promise_external = __webpack_require__(15);
 
 var fbsPromiseimpl = _interopRequireWildcard(_promise_external);
 
-var _requests = __webpack_require__(88);
+var _requests = __webpack_require__(89);
 
 var fbsRequests = _interopRequireWildcard(_requests);
 
@@ -26151,7 +26069,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.async = async;
 
-var _promise_external = __webpack_require__(16);
+var _promise_external = __webpack_require__(15);
 
 var promiseimpl = _interopRequireWildcard(_promise_external);
 
@@ -26215,9 +26133,9 @@ var args = _interopRequireWildcard(_args);
 
 var _authwrapper = __webpack_require__(179);
 
-var _location = __webpack_require__(33);
+var _location = __webpack_require__(32);
 
-var _promise_external = __webpack_require__(16);
+var _promise_external = __webpack_require__(15);
 
 var fbsPromiseImpl = _interopRequireWildcard(_promise_external);
 
@@ -26225,7 +26143,7 @@ var _request = __webpack_require__(182);
 
 var RequestExports = _interopRequireWildcard(_request);
 
-var _reference = __webpack_require__(85);
+var _reference = __webpack_require__(86);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -26384,7 +26302,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.AuthWrapper = undefined;
 
-var _constants = __webpack_require__(32);
+var _constants = __webpack_require__(31);
 
 var constants = _interopRequireWildcard(_constants);
 
@@ -26394,9 +26312,9 @@ var errorsExports = _interopRequireWildcard(_error2);
 
 var _failrequest = __webpack_require__(180);
 
-var _location = __webpack_require__(33);
+var _location = __webpack_require__(32);
 
-var _promise_external = __webpack_require__(16);
+var _promise_external = __webpack_require__(15);
 
 var promiseimpl = _interopRequireWildcard(_promise_external);
 
@@ -26533,7 +26451,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.FailRequest = undefined;
 
-var _promise_external = __webpack_require__(16);
+var _promise_external = __webpack_require__(15);
 
 var promiseimpl = _interopRequireWildcard(_promise_external);
 
@@ -26584,7 +26502,7 @@ var _object = __webpack_require__(20);
 
 var object = _interopRequireWildcard(_object);
 
-var _constants = __webpack_require__(32);
+var _constants = __webpack_require__(31);
 
 var constants = _interopRequireWildcard(_constants);
 
@@ -26680,7 +26598,7 @@ var _object = __webpack_require__(20);
 
 var object = _interopRequireWildcard(_object);
 
-var _promise_external = __webpack_require__(16);
+var _promise_external = __webpack_require__(15);
 
 var promiseimpl = _interopRequireWildcard(_promise_external);
 
@@ -26692,11 +26610,11 @@ var _url = __webpack_require__(48);
 
 var UrlUtils = _interopRequireWildcard(_url);
 
-var _xhrio = __webpack_require__(84);
+var _xhrio = __webpack_require__(85);
 
 var XhrIoExports = _interopRequireWildcard(_xhrio);
 
-var _app = __webpack_require__(11);
+var _app = __webpack_require__(10);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -27075,7 +26993,7 @@ var _swController = __webpack_require__(189);
 
 var _swController2 = _interopRequireDefault(_swController);
 
-var _app = __webpack_require__(11);
+var _app = __webpack_require__(10);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -27130,15 +27048,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _controllerInterface = __webpack_require__(89);
+var _controllerInterface = __webpack_require__(90);
 
 var _controllerInterface2 = _interopRequireDefault(_controllerInterface);
 
-var _errors = __webpack_require__(34);
+var _errors = __webpack_require__(33);
 
 var _errors2 = _interopRequireDefault(_errors);
 
-var _workerPageMessage = __webpack_require__(92);
+var _workerPageMessage = __webpack_require__(93);
 
 var _workerPageMessage2 = _interopRequireDefault(_workerPageMessage);
 
@@ -27146,11 +27064,11 @@ var _defaultSw = __webpack_require__(188);
 
 var _defaultSw2 = _interopRequireDefault(_defaultSw);
 
-var _notificationPermission = __webpack_require__(91);
+var _notificationPermission = __webpack_require__(92);
 
 var _notificationPermission2 = _interopRequireDefault(_notificationPermission);
 
-var _subscribe = __webpack_require__(55);
+var _subscribe = __webpack_require__(56);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27496,7 +27414,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _errors = __webpack_require__(37);
 
-var _errors2 = __webpack_require__(34);
+var _errors2 = __webpack_require__(33);
 
 var _errors3 = _interopRequireDefault(_errors2);
 
@@ -27504,7 +27422,7 @@ var _arrayBufferToBase = __webpack_require__(187);
 
 var _arrayBufferToBase2 = _interopRequireDefault(_arrayBufferToBase);
 
-var _fcmDetails = __webpack_require__(90);
+var _fcmDetails = __webpack_require__(91);
 
 var _fcmDetails2 = _interopRequireDefault(_fcmDetails);
 
@@ -27954,19 +27872,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _controllerInterface = __webpack_require__(89);
+var _controllerInterface = __webpack_require__(90);
 
 var _controllerInterface2 = _interopRequireDefault(_controllerInterface);
 
-var _errors = __webpack_require__(34);
+var _errors = __webpack_require__(33);
 
 var _errors2 = _interopRequireDefault(_errors);
 
-var _workerPageMessage = __webpack_require__(92);
+var _workerPageMessage = __webpack_require__(93);
 
 var _workerPageMessage2 = _interopRequireDefault(_workerPageMessage);
 
-var _fcmDetails = __webpack_require__(90);
+var _fcmDetails = __webpack_require__(91);
 
 var _fcmDetails2 = _interopRequireDefault(_fcmDetails);
 
@@ -28274,7 +28192,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _AllTypes = __webpack_require__(10);
+var _AllTypes = __webpack_require__(17);
 
 var _AllTypes2 = _interopRequireDefault(_AllTypes);
 
@@ -28307,215 +28225,20 @@ exports.default = AuthenticationMiddleware;
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
+var _firebase = __webpack_require__(35);
+
+var firebase = _interopRequireWildcard(_firebase);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+firebase.initializeApp({
+    apiKey: "AIzaSyBu58THbiN2FdGnvqwe5SznPUo30TuxxBY",
+    authDomain: "powerlifting-journal.firebaseapp.com",
+    databaseURL: "https://powerlifting-journal.firebaseio.com",
+    projectId: "powerlifting-journal",
+    storageBucket: "powerlifting-journal.appspot.com",
+    messagingSenderId: "535643933528"
 });
-exports.AppReducer_SetSelectedPage_To_Known_Module = exports.AppReducer_SetSelectedPage_To_Unknown_Module = exports.AppReducer_IsFireBaseReady_To_False = exports.AppReducer_IsFireBaseReady_To_True = exports.AppReducer_IsReady_To_True = undefined;
-
-var _Store = __webpack_require__(35);
-
-var _Store2 = _interopRequireDefault(_Store);
-
-var _AllTypes = __webpack_require__(10);
-
-var _AllTypes2 = _interopRequireDefault(_AllTypes);
-
-var _AllViews = __webpack_require__(24);
-
-var _AllViews2 = _interopRequireDefault(_AllViews);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//-----------------------------------------------------------------------------------
-var AppReducer_IsReady_To_True = function AppReducer_IsReady_To_True() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    if (true == _Store2.default.getState().AppReducer.isAppReady) return true;
-
-    return false;
-};
-exports.AppReducer_IsReady_To_True = AppReducer_IsReady_To_True;
-//-----------------------------------------------------------------------------------
-
-var AppReducer_IsFireBaseReady_To_True = function AppReducer_IsFireBaseReady_To_True() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseReady, true));
-    if (true == _Store2.default.getState().AppReducer.isFireBaseReady) return true;
-
-    return false;
-};
-exports.AppReducer_IsFireBaseReady_To_True = AppReducer_IsFireBaseReady_To_True;
-//-----------------------------------------------------------------------------------
-
-var AppReducer_IsFireBaseReady_To_False = function AppReducer_IsFireBaseReady_To_False() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-    if (true == _Store2.default.getState().AppReducer.isAppReady) {
-        _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, false));
-        if (false == _Store2.default.getState().AppReducer.isAppReady) return true;
-    }
-
-    return false;
-};
-exports.AppReducer_IsFireBaseReady_To_False = AppReducer_IsFireBaseReady_To_False;
-//-----------------------------------------------------------------------------------
-
-var AppReducer_SetSelectedPage_To_Unknown_Module = function AppReducer_SetSelectedPage_To_Unknown_Module() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-    if (true == _Store2.default.getState().AppReducer.isAppReady) {
-        var page = 'I changed the page while logged out';
-        _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setSelectedPage, page));
-        if (page == _Store2.default.getState().AppReducer.selectedPage) return false;
-        return true;
-    }
-
-    return false;
-};
-exports.AppReducer_SetSelectedPage_To_Unknown_Module = AppReducer_SetSelectedPage_To_Unknown_Module;
-//-----------------------------------------------------------------------------------
-
-var AppReducer_SetSelectedPage_To_Known_Module = function AppReducer_SetSelectedPage_To_Known_Module() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-    if (true == _Store2.default.getState().AppReducer.isAppReady) {
-        var page = _AllViews2.default.Home;
-        _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setSelectedPage, page));
-        if (page == _Store2.default.getState().AppReducer.selectedPage) return true;
-    }
-
-    return false;
-};
-exports.AppReducer_SetSelectedPage_To_Known_Module = AppReducer_SetSelectedPage_To_Known_Module;
-//-----------------------------------------------------------------------------------
-
-/***/ }),
-/* 192 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.AppReducer_Login_False_SetSelectedPage_To_Known_Module = exports.AppReducer_Login_False_SetSelectedPage_To_Unknown_Module = exports.AppReducer_Login_False_IsFireBaseReady_To_True = exports.AppReducer_Login_False_IsReady_To_True = undefined;
-
-var _Store = __webpack_require__(35);
-
-var _Store2 = _interopRequireDefault(_Store);
-
-var _AllTypes = __webpack_require__(10);
-
-var _AllTypes2 = _interopRequireDefault(_AllTypes);
-
-var _AllViews = __webpack_require__(24);
-
-var _AllViews2 = _interopRequireDefault(_AllViews);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//-----------------------------------------------------------------------------------
-var AppReducer_Login_False_IsReady_To_True = function AppReducer_Login_False_IsReady_To_True() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, false));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    if (true == _Store2.default.getState().AppReducer.isAppReady) return true;
-
-    return false;
-};
-exports.AppReducer_Login_False_IsReady_To_True = AppReducer_Login_False_IsReady_To_True;
-//-----------------------------------------------------------------------------------
-
-var AppReducer_Login_False_IsFireBaseReady_To_True = function AppReducer_Login_False_IsFireBaseReady_To_True() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, false));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseReady, true));
-    if (true == _Store2.default.getState().AppReducer.isFireBaseReady) return true;
-
-    return false;
-};
-exports.AppReducer_Login_False_IsFireBaseReady_To_True = AppReducer_Login_False_IsFireBaseReady_To_True;
-//-----------------------------------------------------------------------------------
-
-var AppReducer_Login_False_SetSelectedPage_To_Unknown_Module = function AppReducer_Login_False_SetSelectedPage_To_Unknown_Module() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, false));
-    if (true == _Store2.default.getState().AppReducer.isAppReady) {
-        var page = 'I changed the page while logged out';
-        _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setSelectedPage, page));
-        if (page == _Store2.default.getState().AppReducer.selectedPage) return false;
-        return true;
-    }
-
-    return false;
-};
-exports.AppReducer_Login_False_SetSelectedPage_To_Unknown_Module = AppReducer_Login_False_SetSelectedPage_To_Unknown_Module;
-//-----------------------------------------------------------------------------------
-
-var AppReducer_Login_False_SetSelectedPage_To_Known_Module = function AppReducer_Login_False_SetSelectedPage_To_Known_Module() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, false));
-    if (true == _Store2.default.getState().AppReducer.isAppReady) {
-        var page = _AllViews2.default.Home;
-        _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setSelectedPage, page));
-        if (page == _Store2.default.getState().AppReducer.selectedPage) return false;
-        return true;
-    }
-
-    return false;
-};
-exports.AppReducer_Login_False_SetSelectedPage_To_Known_Module = AppReducer_Login_False_SetSelectedPage_To_Known_Module;
-//-----------------------------------------------------------------------------------
-
-/***/ }),
-/* 193 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.LoginReducer_setIsLoggingIn_To_False = exports.LoginReducer_setIsLoggingIn_To_True = undefined;
-
-var _Store = __webpack_require__(35);
-
-var _Store2 = _interopRequireDefault(_Store);
-
-var _AllTypes = __webpack_require__(10);
-
-var _AllTypes2 = _interopRequireDefault(_AllTypes);
-
-var _AllViews = __webpack_require__(24);
-
-var _AllViews2 = _interopRequireDefault(_AllViews);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//-----------------------------------------------------------------------------------
-var LoginReducer_setIsLoggingIn_To_True = function LoginReducer_setIsLoggingIn_To_True() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.Login.setIsLoggingIn, true));
-    if (true == _Store2.default.getState().LoginReducer.isLoggingIn) return true;
-
-    return false;
-};
-exports.LoginReducer_setIsLoggingIn_To_True = LoginReducer_setIsLoggingIn_To_True;
-//-----------------------------------------------------------------------------------
-
-var LoginReducer_setIsLoggingIn_To_False = function LoginReducer_setIsLoggingIn_To_False() {
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsFireBaseLoggedIn, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.App.setIsAppReady, true));
-    _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.Login.setIsLoggingIn, true));
-    if (true == _Store2.default.getState().LoginReducer.isLoggingIn) {
-        _Store2.default.dispatch(_AllTypes2.default.getType(_AllTypes2.default.Login.setIsLoggingIn, false));
-        if (false == _Store2.default.getState().LoginReducer.isLoggingIn) return true;
-    }
-
-    return false;
-};
-exports.LoginReducer_setIsLoggingIn_To_False = LoginReducer_setIsLoggingIn_To_False;
 
 /***/ })
 /******/ ]);
