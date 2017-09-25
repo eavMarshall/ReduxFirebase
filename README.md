@@ -9,6 +9,7 @@ npm build   //To build with -p to /public/js/build.js
 ```
 
 ### Goals
+- To have a template that separates the views from the application state
 - Allows you to login, log out with google authentication
 - Have state tests
 - Have view tests
@@ -28,6 +29,15 @@ Webpack config
 
 /ReduxFirebase/webpack-test.config.js
 Webpack test config
+
+## Application state
+Controlled by redux
+
+## Views
+Current views currently have their own webpack config
+- React
+- Vue
+- Webix
 
 ## Tests
 ### Store tests
