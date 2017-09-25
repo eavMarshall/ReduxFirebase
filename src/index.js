@@ -4,10 +4,10 @@ import * as firebase from 'firebase';
 
 import './config.js'
 
-Store.dispatch(AllTypes.getType(AllTypes.AppStatus.setIsAppReady, true));
+Store.dispatch(AllTypes.getType(AllTypes.App.setIsAppReady, true));
 
 firebase.auth().onAuthStateChanged((user)=>{
-    Store.dispatch(AllTypes.getType(AllTypes.AppStatus.setIsFireBaseReady, true));
+    Store.dispatch(AllTypes.getType(AllTypes.App.setIsFireBaseReady, true));
     fireBaseIsReady(user);
 });
 
