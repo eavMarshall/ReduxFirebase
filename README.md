@@ -9,6 +9,7 @@ npm build   //To build with -p to /public/js/build.js
 ```
 
 ### Goals
+- To have a template that separates the views from the application state
 - Allows you to login, log out with google authentication
 - Have state tests
 - Have view tests
