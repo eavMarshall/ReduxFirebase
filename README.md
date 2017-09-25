@@ -30,6 +30,15 @@ Webpack config
 /ReduxFirebase/webpack-test.config.js
 Webpack test config
 
+## Application state
+Controlled by redux
+
+## Views
+Current views currently have their own webpack config
+- React
+- Vue
+- Webix
+
 ## Tests
 ### Store tests
 Current tests @ \ReduxFirebase\src\Tests\Areas
