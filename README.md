@@ -34,10 +34,7 @@ Webpack test config
 Controlled by redux
 
 ## Views
-Current views currently have their own webpack config
-- React
-- Vue
-- Webix
+Settled on react. The aim is to have the store and the test operational before implementing the view
 
 ## Tests
 ### Store tests
