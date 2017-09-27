@@ -5,7 +5,6 @@ import AllViews from '../../Views/AllViews'
 //-----------------------------------------------------------------------------------
 const LoginReducer_setIsLoggingIn_To_True = ()=>{
     Store.dispatch(AllTypes.getType(AllTypes.App.setIsFireBaseLoggedIn, true));
-    Store.dispatch(AllTypes.getType(AllTypes.App.setIsAppReady, true));
     Store.dispatch(AllTypes.getType(AllTypes.Login.setIsLoggingIn, true));
     if (true == Store.getState().LoginReducer.isLoggingIn) return true;
 
@@ -15,7 +14,6 @@ export { LoginReducer_setIsLoggingIn_To_True }
 //-----------------------------------------------------------------------------------
 const LoginReducer_setIsLoggingIn_To_False = ()=>{
     Store.dispatch(AllTypes.getType(AllTypes.App.setIsFireBaseLoggedIn, true));
-    Store.dispatch(AllTypes.getType(AllTypes.App.setIsAppReady, true));
     Store.dispatch(AllTypes.getType(AllTypes.Login.setIsLoggingIn, true));
     if (true == Store.getState().LoginReducer.isLoggingIn) {
         Store.dispatch(AllTypes.getType(AllTypes.Login.setIsLoggingIn, false));

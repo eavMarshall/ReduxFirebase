@@ -11,10 +11,6 @@ const AppReducerDefaultState = {
 const AppReducer = (state = AppReducerDefaultState, action)=> {
     switch(action.type) {
         case AllTypes.RESET_STORE: return AppReducerDefaultState; break;
-        case AllTypes.App.setIsAppReady:
-            var copy = Object.assign({}, state);
-            copy.isAppReady = action.payload === true ? true : false;
-            return copy
         case AllTypes.App.setIsFireBaseReady:
             var copy = Object.assign({}, state);
             copy.isFireBaseReady = action.payload === true ? true : false;
